@@ -8,3 +8,13 @@
 
 
 
+\## Diagrama de clases — avance
+
+
+
+\### AsociadoCooperativa
+
+
+
+!\[Clase AsociadoCooperativa](diagramas/AsociadoCooperativa.png)
+

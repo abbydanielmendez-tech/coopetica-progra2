@@ -18,3 +18,15 @@
 
 !\[Clase AsociadoCooperativa](diagramas/AsociadoCooperativa.png)
 
+
+
+\### Cuenta
+
+!\[Clase cuenta](diagramas/Cuenta.png)
+
+
+
+\###Movimiento
+
+!\[Clase Movimiento](diagramas/Movimiento.png
+

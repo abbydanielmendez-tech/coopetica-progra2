@@ -1,26 +1,31 @@
-Modifique la misma linea del README.md de dos formas distintas, dede trabajo-Abby y practica-conflicto.
+# Documentación del conflicto de fusión
 
+## 1. ¿Qué archivo entró en conflicto y por qué?
 
+El conflicto ocurrió en README.md durante una práctica realizada por Abby. Modifiqué la misma línea de dos formas distintas en mis ramas trabajo-abby y practica-conflicto. Al ejecutar git merge practica-conflicto desde trabajo-abby, Git no pudo elegir automáticamente cuál conservar.
 
-\### Este fue el conflicto
+## 2. ¿Qué mostraba Git exactamente?
 
-<<<<<<< HEAD
+El archivo mostraba este bloque:
 
-<!-- Practica de fusion: revisar diagramas -->
+```text
+    <<<<<<< HEAD
+    <!-- Practica de fusion: revisar diagramas -->
+    =======
+    <!-- Practica de fusion: revisar documentacion -->
+    >>>>>>> practica-conflicto
+```
 
-=======
+## 3. ¿Cómo resolví el conflicto?
 
-<!-- Practica de fusion: revisar documentacion -->
+Combiné las dos ideas, eliminé los marcadores del README y dejé esta línea:
 
->>>>>>> practica-conflicto
+```html
+<!-- Practica de fusion: revisar diagramas y documentacion -->
+```
 
+Después agregué el archivo con git add y confirmé la resolución mediante un commit.
 
+## 4. ¿Qué haríamos distinto para evitar un conflicto similar?
 
-Como resolvi el conflicto?
-
-Combine las dos ideas y elimine los marcadores, para que quedara en una misma rama
-
-
-
-Para evitar este tipo de conflictos, me pondría de acuerdo con mi compañero sobre que parte del README va editar cada uno, haciendo que cada uno se ponga de acuerdo para evitar conflictos de este tipo, esto reduce la posibilidad de modificar la misma linea de formas distintas.
-
+Nos pondríamos de acuerdo sobre qué sección del README editará cada integrante. Antes de trabajar, revisaríamos e incorporaríamos los cambios compartidos a nuestras ramas y compararíamos las diferencias antes de integrarlas. Esto reduce la posibilidad de modificar la misma línea de formas distintas.

@@ -1,19 +1,31 @@
-Documentación del Conflicto de Fusión - CONFLICTO.md
+# Documentación del conflicto de fusión
 
- 1. ¿Qué archivo entró en conflicto y por qué?
-El conflicto se generó en el archivo `README.md`. Ocurrió porque ambos integrantes modificamos el documento en nuestras ramas (`trabajo-jeremy` y `trabajo-abby`) e intentamos hacer la fusión con la rama principal.
+## 1. ¿Qué archivo entró en conflicto y por qué?
 
-2. ¿Qué mostraba Git exactamente?
-Al intentar fusionar las ramas mediante la Pull Request, Git detuvo el proceso mostrando los marcadores de conflicto:
+El conflicto ocurrió en README.md durante una práctica realizada por Abby. Modifiqué la misma línea de dos formas distintas en mis ramas trabajo-abby y practica-conflicto. Al ejecutar git merge practica-conflicto desde trabajo-abby, Git no pudo elegir automáticamente cuál conservar.
 
-<<<<<<< trabajo-jeremy
-CoopeTica R.L. es una cooperativa de ahorro y crédito que administra cuentas, asociados y movimientos financieros.
-=======
-El sistema para CoopeTica R.L. busca automatizar el registro de asociados, movimientos y cuentas.
->>>>>>> trabajo-abby
+## 2. ¿Qué mostraba Git exactamente?
 
-3. ¿Cómo decidieron cuál versión conservar, o cómo combinaron ambas?
-Se combinaron ambas redacciones conservando la descripción del dominio, la lista de integrantes, los diagramas UML y la bitácora de IA. Se eliminaron los marcadores `<<<<<<<`, `=======` y `>>>>>>>` y se hizo el commit de resolución.
+El archivo mostraba este bloque:
 
- 4. ¿Qué harían distinto para evitar ese conflicto la próxima vez?
-Nos asignaremos secciones independientes del trabajo y haremos `git pull` constante de la rama principal antes de abrir una solicitud de incorporación.
+```text
+    <<<<<<< HEAD
+    <!-- Practica de fusion: revisar diagramas -->
+    =======
+    <!-- Practica de fusion: revisar documentacion -->
+    >>>>>>> practica-conflicto
+```
+
+## 3. ¿Cómo resolví el conflicto?
+
+Combiné las dos ideas, eliminé los marcadores del README y dejé esta línea:
+
+```html
+<!-- Practica de fusion: revisar diagramas y documentacion -->
+```
+
+Después agregué el archivo con git add y confirmé la resolución mediante un commit.
+
+## 4. ¿Qué haríamos distinto para evitar un conflicto similar?
+
+Nos pondríamos de acuerdo sobre qué sección del README editará cada integrante. Antes de trabajar, revisaríamos e incorporaríamos los cambios compartidos a nuestras ramas y compararíamos las diferencias antes de integrarlas. Esto reduce la posibilidad de modificar la misma línea de formas distintas.

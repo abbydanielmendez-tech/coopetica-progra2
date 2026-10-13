@@ -121,4 +121,4 @@ Las consultas devuelven información sin modificar los saldos. La consulta de cu
 \- Utilizamos un borrador generado por ChatGPT para organizar el README y redactar la justificación del modelo.
 
 
-<!-- Practica de fusion: pendiente -->
+<!-- Practica de fusion: revisar diagramas -->

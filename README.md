@@ -30,3 +30,21 @@
 
 !\[Clase Movimiento](diagramas/Movimiento.png
 
+
+
+\### Cuenta de ahorro
+
+!\[Clase CuentaAhorro](diagramas/CuentaAhorro.png)
+
+
+
+\### Cuenta Corriente
+
+!\[Clase CuentaCorriente](diagramas/CuentaCorriente.png)
+
+
+
+\###Certificado a plazo
+
+!\[Clase certificadoPlazo](diagramas/CertificadoPlazo.png)
+

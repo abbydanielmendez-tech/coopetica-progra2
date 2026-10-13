@@ -16,6 +16,38 @@ Resumen del Modelo:
 5.CertificadoPlazo: Especialización con tasa de interés a plazo, plazo en meses y fecha de vencimiento.
 6. Movimiento: Registra la fecha/hora, el tipo de movimiento, el monto y el saldo resultante después de cada transacción.
 
+
+
+
+
+## Diagrama de clases
+
+### AsociadoCooperativa
+
+![Clase AsociadoCooperativa](diagramas/AsociadoCooperativa.png)
+
+### Cuenta
+
+![Clase Cuenta](diagramas/Cuenta.png)
+
+### Movimiento
+
+![Clase Movimiento](diagramas/Movimiento.png)
+
+### Cuenta de ahorro
+
+![Clase CuentaAhorro](diagramas/CuentaAhorro.png)
+
+### Cuenta corriente
+
+![Clase CuentaCorriente](diagramas/CuentaCorriente.png)
+
+### Certificado a plazo
+
+![Clase CertificadoPlazo](diagramas/CertificadoPlazo.png)
+
+
+
 2. Justificación del Modelo
 
 Clases escogidas y criterio de selección:
